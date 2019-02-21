@@ -3654,3 +3654,922 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
   [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "authors" ("name", "genre", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Stephen King"], ["genre", "Romance"], ["bio", "Writes a lot of scary things."], ["created_at", "2019-02-21 23:52:19.100239"], ["updated_at", "2019-02-21 23:52:19.100239"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "authors" ("name", "genre", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ariana Huffington"], ["genre", "Comedy"], ["bio", "Up and comer. One to watch."], ["created_at", "2019-02-21 23:52:19.105412"], ["updated_at", "2019-02-21 23:52:19.105412"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "authors" ("name", "genre", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Horse Ebooks"], ["genre", "?????"], ["bio", "Eclectic."], ["created_at", "2019-02-21 23:52:19.110083"], ["updated_at", "2019-02-21 23:52:19.110083"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Something About Democrats"], ["description", "  Last night I dreamt there is more to life than to bully friends.\n  What has that got to do with Democrats, you probably wonder...\n  The answer is here. Right here. Back in school my hair was silly.\n  Nevermind about the details, but... In a nut-shell: And still,\n  it was strange. Using Google, I found a 12-sided dice.\n  Which would be nothing special but...\n"], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.127370"], ["updated_at", "2019-02-21 23:52:19.127370"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Spam Spam Spam"], ["description", "  It occurred to me that no matter what cards you are dealt,\n  you need to enjoy the small joys. How is this related to Spam, you ask.\n  Fair enough. OK, I will tell you something here now...\n  Sometime around last year I loved movies. Yeah, just what it sounds like.\n  In a nut-shell: And still, it was strange. I collided with the powers of a my computer,\n  broken and gray. And here's why this matters...\n"], ["author_id", 9], ["created_at", "2019-02-21 23:52:19.133146"], ["updated_at", "2019-02-21 23:52:19.133146"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Links! Click Links!"], ["description", "  Last night I dreamt we simply need to realize to be so competitive.\n  Does the responsibility lie with Links, you probably wonder...\n  The answer is here. Right here. About the time I broke up with my\n  ex I was totally into music. Whatever. So that's that.\n  But something wasn't right. I stumbled upon a giant banana.\n"], ["author_id", 10], ["created_at", "2019-02-21 23:52:19.138212"], ["updated_at", "2019-02-21 23:52:19.138212"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "created_at" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["created_at", "2019-02-20 00:00:00.000000"], ["updated_at", "2019-02-21 23:52:19.142375"], ["id", 310]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Illum Sunt Harum Recusandae."], ["description", "Qui nihil vel sed. Odit distinctio dolore. Rerum officiis est eos odit ea. Corrupti quidem debitis illo officiis et commodi harum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.481926"], ["updated_at", "2019-02-21 23:52:19.481926"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aut Dignissimos Similique Nam Dolore Suscipit Optio Voluptatibus."], ["description", "Aut ut officia. Officiis sequi nihil et. Enim et pariatur nisi. Illum qui et nulla."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.486549"], ["updated_at", "2019-02-21 23:52:19.486549"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sit Dolorum Temporibus Perferendis Tempore."], ["description", "Iure qui doloribus illo quasi ipsum. Dolorem sit quam. Qui voluptate eos a. Architecto quibusdam iste qui quia harum exercitationem nesciunt."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.490775"], ["updated_at", "2019-02-21 23:52:19.490775"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Non Eos Qui Sit A."], ["description", "Voluptas quia laborum quia. Ab possimus est. Culpa ut delectus. Et eum dolor provident qui. Cupiditate nobis quibusdam quia dicta velit."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.495492"], ["updated_at", "2019-02-21 23:52:19.495492"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Libero Rem Non Rerum Iste Sapiente Ea Quod."], ["description", "Repellendus ipsa laudantium quis iure. Molestias rem ullam et provident pariatur laboriosam. Quia nemo explicabo eos perferendis itaque libero. Laudantium nihil nihil enim eum sed nulla quasi. Aut placeat debitis vel."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.499782"], ["updated_at", "2019-02-21 23:52:19.499782"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Fuga Earum Ipsam Natus Aliquam Quo Voluptatem Non Blanditiis."], ["description", "Quaerat quo est ullam. Ipsum qui in. Laborum porro cum hic assumenda enim. Cumque odio similique quibusdam et. Ipsa commodi rem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.503824"], ["updated_at", "2019-02-21 23:52:19.503824"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Veniam Sunt Et Occaecati Omnis Repudiandae."], ["description", "Facere aliquam ut beatae asperiores doloremque. Ut voluptas vitae animi distinctio delectus quos. Sunt dolorem vel commodi molestiae. Esse assumenda voluptatem quis minus. Et provident ea quidem sint nihil quis voluptatem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.508213"], ["updated_at", "2019-02-21 23:52:19.508213"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Sed Est Sit Inventore Consequuntur Labore Assumenda Commodi Repellat."], ["description", "Unde aspernatur nemo. Ut voluptatem facilis quia. Ut repellendus natus dolor itaque consectetur optio."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.512461"], ["updated_at", "2019-02-21 23:52:19.512461"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Quidem Vitae Veniam Eius Cumque Alias Dolores Qui."], ["description", "Eos accusamus enim facere. Modi autem autem enim quasi quo. Minus commodi voluptas cumque blanditiis ea. Eum labore sed minima et soluta dignissimos."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.517459"], ["updated_at", "2019-02-21 23:52:19.517459"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Enim Provident Dolorum Accusamus Exercitationem Cupiditate."], ["description", "Omnis est hic. Animi et rerum voluptas totam non. Deserunt corrupti est dignissimos ex. Ratione ducimus debitis dolores voluptas blanditiis nostrum dolor."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.522975"], ["updated_at", "2019-02-21 23:52:19.522975"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Et Atque Repellendus Molestiae Enim Alias Laudantium."], ["description", "Accusantium dolore eos. Quia ratione iure mollitia omnis eligendi aut. Dolores fugiat dolore voluptatum alias quae veniam autem. Exercitationem porro adipisci. Minus omnis molestiae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.528458"], ["updated_at", "2019-02-21 23:52:19.528458"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Qui Autem Tempora Vel Est Dolorum."], ["description", "Et et possimus qui sed eos occaecati. Vel aut autem sed qui esse quis. Labore consequatur et voluptatem dolores corrupti. Et ipsum molestiae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.533042"], ["updated_at", "2019-02-21 23:52:19.533042"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Unde Est Nihil Ullam Qui Ipsam."], ["description", "Accusamus voluptas voluptates alias placeat. Aut assumenda quas quod voluptas veritatis aliquid. Qui ipsa error eveniet adipisci minima consequatur in."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.537381"], ["updated_at", "2019-02-21 23:52:19.537381"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Similique Earum Sit Eum Reiciendis Aliquam Amet Tempore."], ["description", "Eligendi sapiente quod blanditiis sit optio provident. Reiciendis vel qui ea doloribus et. Quibusdam iste quam quis ut ipsam. Minima est laboriosam sint. Laboriosam quae neque molestiae consequuntur blanditiis sed et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.541241"], ["updated_at", "2019-02-21 23:52:19.541241"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Illo Qui Dolore Amet Culpa Consequatur."], ["description", "Ipsum vero laboriosam quibusdam placeat non. Animi maxime blanditiis est aut. Id voluptas cumque adipisci enim. Quam enim perspiciatis ipsam alias. Blanditiis ipsa magni esse et et consectetur omnis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.545437"], ["updated_at", "2019-02-21 23:52:19.545437"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Officia Enim In Et."], ["description", "Optio quis nam dolores quaerat temporibus quibusdam. Eligendi praesentium eos. Odio mollitia et corporis libero. Exercitationem voluptate molestias qui aut ipsum voluptatem laudantium."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.550119"], ["updated_at", "2019-02-21 23:52:19.550119"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Et Ab Voluptas Repudiandae Accusamus Et Dolorum Temporibus Nesciunt."], ["description", "Et aut voluptatem rem. Enim exercitationem assumenda qui. Quia magnam sunt blanditiis sint aspernatur quidem alias."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.554558"], ["updated_at", "2019-02-21 23:52:19.554558"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Asperiores Nihil Illo Sint Minima."], ["description", "Omnis vitae tenetur et minima et at. Tenetur enim voluptas praesentium eum ut modi occaecati. Aliquid quis praesentium aliquam eos veritatis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.563520"], ["updated_at", "2019-02-21 23:52:19.563520"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sunt Aliquid Mollitia A Beatae Harum."], ["description", "Unde deleniti sunt eveniet. Non quo dolore natus et. Deserunt sit ipsam tempora et aliquid. Ratione consequatur quis optio quia eum suscipit quia."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.569143"], ["updated_at", "2019-02-21 23:52:19.569143"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Sit Sed Laudantium Ex Iste Quia A."], ["description", "Necessitatibus ea et velit voluptatem. Blanditiis praesentium ipsum culpa ipsam. Accusamus aut sed recusandae aspernatur voluptatum non."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.573718"], ["updated_at", "2019-02-21 23:52:19.573718"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Dignissimos Eligendi Error Aut Eum."], ["description", "Quisquam eligendi quia iure molestias. Quaerat et atque in optio tempora laboriosam. Aut quo et eos modi. Voluptatum aut debitis quia reprehenderit vel error alias. Et dolore necessitatibus."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.579376"], ["updated_at", "2019-02-21 23:52:19.579376"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Qui Assumenda Cum Autem."], ["description", "Modi et possimus autem fugit. Cum provident voluptatum ab. Necessitatibus eos distinctio quis ut sed itaque. Minus quis qui quia iure placeat voluptatem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.584251"], ["updated_at", "2019-02-21 23:52:19.584251"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sed Illum Quibusdam Voluptate Aut Et."], ["description", "Ea nemo accusamus minus nihil. Hic assumenda cupiditate eaque. Dicta laudantium hic dolorum quis est."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.589697"], ["updated_at", "2019-02-21 23:52:19.589697"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Perferendis Doloribus Velit Vero Earum."], ["description", "Officia ea qui adipisci voluptas. Voluptatem voluptatem nisi. Quaerat voluptatibus cumque natus velit qui. Aliquid culpa dolorem aut tempora magni sed sequi. Ipsa non nesciunt debitis rerum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.595049"], ["updated_at", "2019-02-21 23:52:19.595049"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Architecto Qui Natus Nesciunt."], ["description", "Molestias et saepe nihil vel autem voluptatem. Sit atque et molestias. Reprehenderit quod molestiae impedit unde autem sunt deserunt."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.599963"], ["updated_at", "2019-02-21 23:52:19.599963"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Sunt Est Ipsum Facere Minus Beatae Numquam Corrupti."], ["description", "Fuga nisi labore temporibus nesciunt quia ut. Provident non pariatur dolorem distinctio dignissimos nisi tenetur. Neque magni est."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.604672"], ["updated_at", "2019-02-21 23:52:19.604672"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Incidunt Perspiciatis Hic Facilis Fugit Dolorum Et Cum."], ["description", "Voluptates doloremque dignissimos atque consequuntur eius eos. Voluptate velit ut corporis. Fugit cum quis. Ut occaecati dolorem odit ab sit officiis ipsum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.609504"], ["updated_at", "2019-02-21 23:52:19.609504"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Voluptatum Reiciendis Quia Sit Consequuntur Quia."], ["description", "Vitae molestiae iure maiores. Atque quam exercitationem eligendi doloribus nulla impedit. Tempore laudantium iusto non qui."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.614605"], ["updated_at", "2019-02-21 23:52:19.614605"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Laborum Vel Quas Libero Temporibus Minima Soluta Doloremque Rerum."], ["description", "Recusandae vel accusantium sit. Harum voluptatem culpa id mollitia et. Quaerat odio qui laborum quisquam animi adipisci modi."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.619321"], ["updated_at", "2019-02-21 23:52:19.619321"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Quisquam Debitis Nobis Voluptate Ut Et Pariatur Aut."], ["description", "Nihil ipsam qui. Consequatur quos excepturi voluptatem quisquam. Ut et accusamus consectetur aut et optio. Quibusdam non nam sint nihil. Et velit beatae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.624472"], ["updated_at", "2019-02-21 23:52:19.624472"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Voluptatem Hic Mollitia Est Eum Sed Aspernatur Eius Sapiente."], ["description", "Laboriosam est laborum non aut veritatis incidunt ipsum. Velit voluptatem magni eius nihil necessitatibus. Ut optio tempore veritatis dolorem deleniti cumque. Id et vitae aliquam perspiciatis dolor recusandae. Aut voluptatem dignissimos nostrum itaque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.629647"], ["updated_at", "2019-02-21 23:52:19.629647"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "At Modi Tempore Amet Sint Quia Qui Tenetur Voluptatem."], ["description", "Natus consequatur ab consequuntur aut qui. Totam modi quibusdam voluptates quia earum facilis impedit. Sunt sequi voluptas natus odit perspiciatis. Ut non animi quia suscipit numquam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.634843"], ["updated_at", "2019-02-21 23:52:19.634843"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Dolor Hic Est Sint Soluta."], ["description", "Iure hic praesentium. Animi temporibus pariatur nemo et et beatae. Aut adipisci accusantium molestiae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.638836"], ["updated_at", "2019-02-21 23:52:19.638836"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Odit Sit Nisi Minus Ducimus Temporibus."], ["description", "Error ut facilis accusantium eum. Laboriosam ea ipsa ex. Eum nostrum id voluptate ut nemo nisi. Doloribus veritatis facere impedit libero."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.642316"], ["updated_at", "2019-02-21 23:52:19.642316"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Consequatur Saepe Quidem Aut Quia Nostrum Quisquam Aut."], ["description", "Odio magnam sequi id. Beatae laborum autem odio velit placeat. Nostrum dolorem animi itaque aut occaecati iure. Eius qui enim dolore omnis omnis est repudiandae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.646168"], ["updated_at", "2019-02-21 23:52:19.646168"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Nostrum Esse Autem Magni Voluptates Et Expedita Quos."], ["description", "Rerum et culpa ut nisi minima blanditiis. Non velit aut dicta qui sint voluptatibus aut. Nam eos repellendus hic ratione ut aut laborum. Qui veniam repellendus corporis tempore sed assumenda aut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.650116"], ["updated_at", "2019-02-21 23:52:19.650116"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Non Commodi Asperiores Dolor."], ["description", "Cumque officia consequatur. Suscipit officiis ea sunt et et a veritatis. Nesciunt debitis sed. Omnis praesentium natus."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.654207"], ["updated_at", "2019-02-21 23:52:19.654207"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Maiores Cum Reiciendis Omnis Unde Voluptas Incidunt A."], ["description", "Excepturi veniam perferendis aspernatur provident. Possimus enim in aspernatur et sit id. Facilis eos et provident distinctio. Vel et delectus quisquam pariatur debitis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.659215"], ["updated_at", "2019-02-21 23:52:19.659215"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Nostrum Sit Enim Delectus Autem Quia Architecto."], ["description", "Beatae aut ut incidunt omnis. Harum ut sed quibusdam praesentium autem blanditiis. Est itaque voluptas cumque non ratione iusto occaecati. Id nostrum ipsam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.664045"], ["updated_at", "2019-02-21 23:52:19.664045"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Doloribus Voluptatibus Omnis Nam Eos Ratione Delectus Laboriosam Nisi."], ["description", "Qui suscipit consequatur quod. Quod velit voluptatibus asperiores deserunt dolorem rerum doloremque. Quo aut molestias eos eaque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.668976"], ["updated_at", "2019-02-21 23:52:19.668976"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Rem Tempore Ut Odio Voluptatem Ab Possimus."], ["description", "Et fugit ducimus aut. Quia ullam iste. Repellat enim occaecati ipsam et. Sed blanditiis expedita. Beatae harum nihil consectetur voluptatibus accusamus illo perferendis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.674578"], ["updated_at", "2019-02-21 23:52:19.674578"]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Corrupti Sunt Iste Dolorum Harum Itaque Recusandae Dolorem Sequi."], ["description", "Rerum dolor molestiae omnis facilis. Enim sit consequatur distinctio excepturi omnis et. Enim mollitia culpa quia consequuntur eius."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.681865"], ["updated_at", "2019-02-21 23:52:19.681865"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sed Et Quis Nemo Cupiditate Temporibus."], ["description", "At quis necessitatibus aspernatur in. Eligendi exercitationem ut est qui. Praesentium quis tempora voluptate eligendi. Rerum quasi aspernatur et omnis qui nulla. Dolor voluptas omnis illo ut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.687768"], ["updated_at", "2019-02-21 23:52:19.687768"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Est Facilis Aliquam Quasi Neque Distinctio Omnis."], ["description", "Odio est veritatis atque nesciunt temporibus cum sed. Omnis voluptatem sed et eos. Eaque aut atque minima distinctio eum ea ipsa."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.692616"], ["updated_at", "2019-02-21 23:52:19.692616"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Et Vel Aliquid Ipsum Voluptatibus."], ["description", "Ut itaque autem hic. Ducimus vel velit aut. Quaerat qui repellat."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.697786"], ["updated_at", "2019-02-21 23:52:19.697786"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Corporis Voluptatibus Voluptatem Numquam Molestias Quia Doloremque Reiciendis Laudantium."], ["description", "Doloribus explicabo saepe ab mollitia sunt dolore non. Molestiae eaque aut soluta ipsam labore. Sed dolorum qui autem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.702260"], ["updated_at", "2019-02-21 23:52:19.702260"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Illo Ex Reiciendis Nisi Soluta."], ["description", "Mollitia placeat reiciendis quaerat dolore sunt tempore ullam. Rerum aperiam ab natus pariatur. Id est possimus et culpa illo itaque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.707311"], ["updated_at", "2019-02-21 23:52:19.707311"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Dolor Blanditiis Aspernatur Nulla Repudiandae Consectetur Fuga Eligendi Et."], ["description", "Cupiditate neque eos veritatis. Modi praesentium eius ipsum omnis. Omnis excepturi aperiam alias aut. Perferendis ad autem ipsa sint dignissimos sunt."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.711987"], ["updated_at", "2019-02-21 23:52:19.711987"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Vel Eaque Repellendus Amet."], ["description", "Repellat sint placeat veritatis. Et dignissimos aut. Dignissimos optio magnam consequatur labore vero. Et officia quaerat. Et saepe eos tempore."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.717354"], ["updated_at", "2019-02-21 23:52:19.717354"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Amet At Est Dolor."], ["description", "Ducimus quasi delectus voluptas aspernatur et maxime. Ea et nisi et maxime mollitia iste. Quo est enim minima."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.721836"], ["updated_at", "2019-02-21 23:52:19.721836"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sit Sit In Rerum Autem Dolor Doloremque Qui."], ["description", "Est incidunt autem. Dolor placeat sequi ullam veritatis eum magnam sunt. Laudantium quis eligendi deleniti laboriosam. Sapiente nostrum aut nihil accusamus et iste cumque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.727096"], ["updated_at", "2019-02-21 23:52:19.727096"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Atque Officia Voluptate Ea Incidunt Aut."], ["description", "Rem atque aliquam provident in consequuntur inventore laboriosam. Eaque ut omnis totam tempora odit. Nostrum cum corrupti nihil eligendi quae eum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.732236"], ["updated_at", "2019-02-21 23:52:19.732236"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Omnis Expedita Quibusdam Earum Quia Cumque Molestiae At Beatae."], ["description", "Quaerat et dolores. Quisquam nulla eveniet est id ut ut impedit. Sit eos consequatur amet numquam. Inventore qui maxime."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.736903"], ["updated_at", "2019-02-21 23:52:19.736903"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aut Pariatur Quibusdam Aperiam Cumque Totam Magni Labore Quod."], ["description", "Et repellendus sed sed quos voluptatem officia molestias. Architecto animi possimus dignissimos maiores. Enim vel veniam eum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.741708"], ["updated_at", "2019-02-21 23:52:19.741708"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Placeat Excepturi Perspiciatis Vitae Molestiae Non Beatae Similique."], ["description", "Voluptas voluptatem facilis quas quod earum. Velit nulla qui laborum vel voluptatem. A accusamus libero sunt quisquam quae autem cum. Enim earum ut vel voluptatum consequatur. Excepturi consequuntur maiores eum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.746688"], ["updated_at", "2019-02-21 23:52:19.746688"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Blanditiis Enim Qui Ut Esse."], ["description", "Consequatur fugit dolores atque. Velit omnis ut in officiis sunt. Quibusdam et nisi."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.751249"], ["updated_at", "2019-02-21 23:52:19.751249"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Dolorem Soluta Recusandae Odit Fugit."], ["description", "Quaerat pariatur voluptas. At et molestiae. Est placeat explicabo fugiat aliquam aut nam. Ut veritatis nulla impedit autem natus at."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.756318"], ["updated_at", "2019-02-21 23:52:19.756318"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Officiis Qui Voluptatem Laborum Aut Voluptas."], ["description", "In excepturi neque et explicabo praesentium repellendus. Quaerat id in molestiae. Inventore aut porro commodi. Est repudiandae qui."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.760531"], ["updated_at", "2019-02-21 23:52:19.760531"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Veritatis Pariatur Consequatur Et."], ["description", "At ipsa sed dolorem voluptas facere aut qui. Aut velit quam at suscipit quasi qui. Excepturi cupiditate nostrum repudiandae debitis ratione. Temporibus corrupti ab omnis. Amet numquam sit corrupti iusto ea eaque earum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.764874"], ["updated_at", "2019-02-21 23:52:19.764874"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Dolor Quam Voluptates Est Omnis Vero Necessitatibus Id Incidunt."], ["description", "Totam porro aspernatur quae ea corrupti excepturi explicabo. Repellendus voluptatem non consequuntur. In ipsam eveniet sint dolores consequuntur sed."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.769303"], ["updated_at", "2019-02-21 23:52:19.769303"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Velit Optio Non Enim Sit Sed Sapiente At."], ["description", "Ut ullam nesciunt sint excepturi libero sit quod. Vel vitae reiciendis. Et aut eum doloremque. Occaecati in et porro sunt ut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.773784"], ["updated_at", "2019-02-21 23:52:19.773784"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Non Tempora Totam Consequatur Ullam."], ["description", "Itaque labore maiores inventore quisquam. Enim aut velit. Libero quo perferendis suscipit ut eos."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.778226"], ["updated_at", "2019-02-21 23:52:19.778226"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Deserunt Occaecati Magnam Eaque Expedita Amet."], ["description", "Ex nemo hic veniam architecto. Esse vero cupiditate quae et. Similique sint molestias vitae rerum quos. At officia nihil libero debitis. Aliquam nihil qui esse."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.782763"], ["updated_at", "2019-02-21 23:52:19.782763"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ducimus Corrupti Est Voluptas Quis Ipsam Dolorem."], ["description", "Ea amet laborum est ullam autem voluptatem modi. Ea repudiandae non error. Sapiente voluptate temporibus perferendis et veritatis reprehenderit distinctio. Consequatur placeat repellat quia doloremque porro. Explicabo est omnis nobis eum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.787197"], ["updated_at", "2019-02-21 23:52:19.787197"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Dolores Et Sint Sapiente Dolorum Repudiandae."], ["description", "Molestiae et rerum ab dicta nihil quisquam quas. Corrupti fugit facilis voluptatem aut itaque beatae. Recusandae amet sint et fugiat aut ea velit. Ab quis rerum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.791566"], ["updated_at", "2019-02-21 23:52:19.791566"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Deserunt Facere Et Et Eos Ratione Vero."], ["description", "Occaecati dignissimos ab esse nisi. Molestiae rerum et. Temporibus ut id voluptatem odio a. Velit velit nobis aperiam facere exercitationem provident eum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.795738"], ["updated_at", "2019-02-21 23:52:19.795738"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Labore Suscipit Exercitationem Voluptates Rem Esse."], ["description", "Qui voluptate nostrum dolor aspernatur. Vero vitae facere quo aut debitis. Earum eos quo a quia ad. Maxime nulla in voluptas sapiente ut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.800085"], ["updated_at", "2019-02-21 23:52:19.800085"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Expedita Ipsa Nesciunt Omnis Accusantium Praesentium Voluptas Omnis Animi."], ["description", "Sunt nam voluptatum. Ut ut consequatur ipsa. Harum quis enim totam. Suscipit tenetur sed qui dolor quis nostrum. Nam sint alias ratione necessitatibus."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.804655"], ["updated_at", "2019-02-21 23:52:19.804655"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Occaecati Ducimus Inventore Vel Voluptas Ut Dolore."], ["description", "Beatae corporis qui. Quisquam explicabo eum velit. Id eos eum porro. Debitis autem rerum est sit et nesciunt. Maiores commodi facere alias sint."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.809505"], ["updated_at", "2019-02-21 23:52:19.809505"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ut Quas Sit Provident."], ["description", "Quia quia voluptas est. Mollitia quidem eos. Soluta necessitatibus laboriosam quos qui dolorum quod."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.814363"], ["updated_at", "2019-02-21 23:52:19.814363"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Nam Dolores Aut Id Aut Quis Assumenda Commodi."], ["description", "Deleniti laborum accusamus quia atque est itaque qui. At error ut. Culpa hic aperiam et est consequuntur blanditiis. Ratione sit omnis rerum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.819739"], ["updated_at", "2019-02-21 23:52:19.819739"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Enim Qui Minima Id Ab Sunt Distinctio Rerum."], ["description", "Aut facilis aliquid totam id reprehenderit iure. Quia eos sed hic quibusdam magni culpa. Animi ipsum voluptates iusto. Vel iure est ratione provident expedita."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.823828"], ["updated_at", "2019-02-21 23:52:19.823828"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sequi Est Ut Sed Perspiciatis."], ["description", "Et nihil odio optio rem quisquam eum non. Nam hic molestiae provident. At quos sit. Deleniti quasi qui consequatur reprehenderit laborum blanditiis harum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.828280"], ["updated_at", "2019-02-21 23:52:19.828280"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Quis Sed Sit Numquam Recusandae Provident Enim Qui Soluta."], ["description", "Odio nihil est esse error tenetur qui commodi. Odit eveniet facilis. Mollitia tempora distinctio quis. Quia sapiente ex quaerat. Eos repellat unde autem labore alias."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.833159"], ["updated_at", "2019-02-21 23:52:19.833159"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Qui Culpa Facilis Voluptatem."], ["description", "Est sint ut eos. Consequatur dolorum dicta dolor fugiat qui aut. Ut perferendis vel neque qui eius qui dolores. Odio quaerat fugiat laudantium hic. Itaque ex aut et et ut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.838409"], ["updated_at", "2019-02-21 23:52:19.838409"]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Inventore Quos Fugit Id Impedit Expedita Commodi Architecto Veniam."], ["description", "Doloribus commodi eum omnis id voluptates. Minus sit consequatur rem nihil asperiores dicta. Vero in accusantium ut nesciunt eos. Adipisci repellat molestias voluptatem. Et alias enim similique ut harum voluptatem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.845739"], ["updated_at", "2019-02-21 23:52:19.845739"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Ut Cumque Alias Neque Quaerat Aut Delectus."], ["description", "Ea fuga amet. Corporis vero aut iste amet animi perferendis. A nam deserunt ut distinctio quidem. Eos cumque qui necessitatibus voluptatem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.851315"], ["updated_at", "2019-02-21 23:52:19.851315"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Quisquam Natus Asperiores Nobis Doloribus Sed Doloremque."], ["description", "Vitae placeat rerum pariatur eos autem consequatur officiis. Laudantium sequi facere autem dignissimos dolore. Dolor dolorum molestiae quam debitis explicabo qui. Facere quia dolor sit porro quia."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.856299"], ["updated_at", "2019-02-21 23:52:19.856299"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Reprehenderit Voluptates Eius Consectetur Odit."], ["description", "Quidem sit sint. Consectetur dolorem modi ut nobis excepturi et. Sed hic incidunt sit. Voluptas omnis quod nobis beatae. Perspiciatis ex adipisci est."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.860363"], ["updated_at", "2019-02-21 23:52:19.860363"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Sit Vitae Consequatur Et Vero Id Ipsa."], ["description", "Iste tempora voluptatum quia. Officia eos vero consequatur dolorem a et rerum. Provident ea omnis eum rerum. Nobis fugiat qui ut. Omnis eos et illum saepe labore praesentium."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.864385"], ["updated_at", "2019-02-21 23:52:19.864385"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Illo Placeat Eveniet Qui Quae Ex."], ["description", "Necessitatibus et accusantium. Nihil dignissimos iste praesentium temporibus et. Eveniet perferendis nostrum cum omnis dolorem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.868828"], ["updated_at", "2019-02-21 23:52:19.868828"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Exercitationem Ea Labore Nihil Eligendi Cumque Omnis Dolorem."], ["description", "Est ut blanditiis qui molestiae error laudantium. Fugiat est ducimus illo similique assumenda quidem sapiente. Fugiat error deleniti quod. Asperiores velit perspiciatis hic quo natus autem et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.876454"], ["updated_at", "2019-02-21 23:52:19.876454"]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Dolorum Recusandae Quis Corrupti Vel Mollitia Deleniti Et Explicabo."], ["description", "Qui sed eos quae. Provident voluptatem at accusantium incidunt dolor et. Excepturi harum eum et consectetur. Doloribus rerum et nemo molestias. Et sapiente itaque repudiandae eaque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.883490"], ["updated_at", "2019-02-21 23:52:19.883490"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Cupiditate Architecto Voluptatem In."], ["description", "Sed sint aperiam quisquam laborum consequuntur. Ea sint accusantium necessitatibus. Quasi qui qui. Sint itaque tenetur laudantium nisi enim laborum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.887720"], ["updated_at", "2019-02-21 23:52:19.887720"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Eum Ex Sequi Officiis Voluptate Vitae Accusamus."], ["description", "Voluptas deserunt et repudiandae dicta et. Dolor explicabo eos molestiae dolore debitis beatae ut. Ut et impedit nemo itaque cupiditate dolores est. Vitae explicabo beatae. At nobis quod ut illo quisquam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.893070"], ["updated_at", "2019-02-21 23:52:19.893070"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Eos Voluptatem Omnis Dolor Est Cumque Blanditiis."], ["description", "Et qui fuga. Ut atque harum iure dolore perferendis. Natus ratione hic delectus rem voluptatem. Eum nobis iusto quis nihil. Non et laboriosam neque aspernatur eius."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.898758"], ["updated_at", "2019-02-21 23:52:19.898758"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Est Aperiam Ut Tenetur Et Consequatur Eos Accusamus Voluptatem."], ["description", "Nostrum qui tempora perspiciatis enim autem. Eveniet et occaecati sint nihil. Enim porro rem odio eligendi voluptatum. Earum magnam enim eos. Officiis natus amet illo repellendus et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.905370"], ["updated_at", "2019-02-21 23:52:19.905370"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Commodi Incidunt Eveniet Qui Aut Aut Cupiditate Tenetur."], ["description", "Voluptas quo possimus. Sed aut corporis nostrum voluptas. Exercitationem odio qui ipsum voluptatibus. Nobis facere in est voluptate debitis iste. Quis at enim."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.911328"], ["updated_at", "2019-02-21 23:52:19.911328"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Ut Mollitia Consequatur Quod Ipsum Harum."], ["description", "Distinctio quis est consequatur reiciendis. Ut ratione et optio et et voluptas. Et omnis ullam magni et hic architecto. Sed illo magni ratione dolor voluptatibus praesentium. In omnis quod consequuntur accusantium similique cupiditate aliquid."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.917086"], ["updated_at", "2019-02-21 23:52:19.917086"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Vel Aut Magni Quidem Nulla."], ["description", "Dolorem deleniti ab qui reprehenderit qui asperiores. Optio numquam iste. Mollitia ab aliquid nesciunt ut modi non assumenda. Rerum commodi minus. Quas mollitia totam sit perferendis odit."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.922316"], ["updated_at", "2019-02-21 23:52:19.922316"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Illo Cum Amet Assumenda Dolor Qui Error."], ["description", "Consequatur incidunt repellendus. Aut in perferendis accusantium delectus error vel quas. Error aliquid ex atque. Fuga quae fugiat omnis ab non voluptas."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.930031"], ["updated_at", "2019-02-21 23:52:19.930031"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Distinctio Omnis Possimus Aliquam."], ["description", "Dolorem aspernatur quia tenetur dolore. Consequatur quis facere placeat molestiae in. Et id sed explicabo ut et. Id quo ut magnam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.934856"], ["updated_at", "2019-02-21 23:52:19.934856"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "In Ullam Sit Nemo Rerum."], ["description", "Nesciunt sed nostrum autem. Ad expedita voluptas. Dolore atque nostrum ea harum. Sequi accusamus repellat dolor ut dolorem tempore consequatur. Perferendis maxime quaerat voluptas necessitatibus voluptatem repellendus."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.939661"], ["updated_at", "2019-02-21 23:52:19.939661"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Qui Praesentium Alias Occaecati Expedita Cumque Veniam Aliquid."], ["description", "Veniam quibusdam et delectus facere ipsum aperiam. Mollitia blanditiis doloremque voluptatem consequatur illo libero velit. In ipsam eum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.944806"], ["updated_at", "2019-02-21 23:52:19.944806"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Dolor Ut Est Ex Aut Assumenda Consequatur."], ["description", "Et praesentium totam repudiandae sapiente. Incidunt porro perferendis assumenda sequi odit ut necessitatibus. Tempore et at facilis nobis blanditiis nihil. Corrupti quam voluptatibus rerum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.951417"], ["updated_at", "2019-02-21 23:52:19.951417"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Repellendus Numquam Corrupti Est."], ["description", "Ratione saepe necessitatibus architecto qui incidunt. Amet ut dolor maxime. Sunt distinctio magnam sint ipsa quaerat vero aut. Placeat debitis ab nulla rerum. Expedita sint in."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.957687"], ["updated_at", "2019-02-21 23:52:19.957687"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Temporibus Quia Quo Aut Nemo Atque A."], ["description", "Qui voluptates saepe. Et nostrum repellat adipisci beatae dolor. Neque nam ab et sit distinctio quibusdam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.963562"], ["updated_at", "2019-02-21 23:52:19.963562"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Consequuntur Qui Harum Rerum Eaque Incidunt Accusamus Distinctio Dicta."], ["description", "Quidem et officia pariatur perferendis dolore voluptatem. Doloribus accusantium at unde. Deserunt natus et illum voluptas deleniti maiores. Minus ipsum non exercitationem qui dolore voluptatem vitae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.969296"], ["updated_at", "2019-02-21 23:52:19.969296"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Commodi Sequi Vero Non Nobis Quo Ut Reiciendis Et."], ["description", "Ullam minima consequuntur velit. Atque aut quisquam natus sint laborum explicabo. Cumque et dicta quam eos."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.974947"], ["updated_at", "2019-02-21 23:52:19.974947"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Nostrum Consectetur Ducimus Quis Sunt Ut Voluptas Molestias."], ["description", "Dolorum sint quisquam. Aut perferendis placeat optio minus et magnam est. Consequatur est reiciendis nisi. Enim qui voluptatum dolorem consequatur et praesentium hic."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.979860"], ["updated_at", "2019-02-21 23:52:19.979860"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Qui At Totam Est Excepturi."], ["description", "Qui asperiores dicta molestiae voluptate deserunt. Distinctio et unde aut quia enim. Ea cum in perspiciatis suscipit odit voluptatem aliquid. Praesentium aspernatur delectus. Atque reprehenderit non consectetur eius voluptas non et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.984415"], ["updated_at", "2019-02-21 23:52:19.984415"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ipsam Nulla Accusamus Suscipit."], ["description", "Recusandae eos unde cumque quo aut culpa. Illum a iure hic earum. Dolorem nam maiores itaque quia dignissimos consectetur."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.988965"], ["updated_at", "2019-02-21 23:52:19.988965"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Eveniet Totam Numquam Fuga Qui Amet Est."], ["description", "Vel illo quas laborum minima sed. Cupiditate alias praesentium velit. Excepturi perferendis velit id."], ["author_id", 8], ["created_at", "2019-02-21 23:52:19.995104"], ["updated_at", "2019-02-21 23:52:19.995104"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Perspiciatis Nihil Atque Quasi Est Corporis Voluptatem Temporibus Sint."], ["description", "Quod enim nihil ut nam nostrum perspiciatis. Est voluptates omnis voluptas ut provident ratione. Laudantium impedit voluptas esse dolores dolore eos soluta. Rerum ut nobis corporis ut repellat alias. Sed numquam quas neque assumenda."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.000865"], ["updated_at", "2019-02-21 23:52:20.000865"]]
+  [1m[35m (5.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Quo Temporibus Assumenda Error Dignissimos Molestias Est Similique Hic."], ["description", "Nostrum eum architecto commodi quam aperiam aut. Eligendi eveniet minima vel non temporibus. Enim similique rerum exercitationem iste. Qui commodi eos voluptas iste ipsa eum sint."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.009753"], ["updated_at", "2019-02-21 23:52:20.009753"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ducimus Est Nemo Cum Nobis Voluptates."], ["description", "Nihil odio mollitia dolore cumque perferendis. A saepe est fugiat et et illum modi. Dolorum eum ea doloribus occaecati quia ut. Temporibus quae quia asperiores velit ut delectus nemo."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.014585"], ["updated_at", "2019-02-21 23:52:20.014585"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Nihil Aut Magni Autem Dolorum Aperiam Consectetur Facere Quaerat."], ["description", "In tempora eum eum. Nihil dolor vitae ad. In perferendis mollitia vero perspiciatis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.019370"], ["updated_at", "2019-02-21 23:52:20.019370"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ad Cumque Sequi Doloremque Error Rerum Unde Harum Odit."], ["description", "Aut ut velit accusamus qui iusto. Quia sit magni dolorem fugiat. Reprehenderit qui aperiam fugit consequuntur aut et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.024067"], ["updated_at", "2019-02-21 23:52:20.024067"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Commodi Et Culpa Labore Et Rerum Deleniti."], ["description", "Possimus in et ut corporis rerum. Blanditiis non quo odio qui sit quidem. Qui dolorem exercitationem tempore. Necessitatibus iure veniam molestiae. Sit et eaque quis possimus ea veniam eveniet."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.028933"], ["updated_at", "2019-02-21 23:52:20.028933"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Quo Ut Quos Facere Sed."], ["description", "Nobis tempore dolores cupiditate. Quibusdam omnis qui quas blanditiis velit. Voluptatibus sint beatae. Provident repellat et illo. Non laudantium dolorum saepe repudiandae consequatur ullam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.033910"], ["updated_at", "2019-02-21 23:52:20.033910"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Adipisci Ut Itaque Expedita Et Velit Iusto Tempora Id."], ["description", "Rerum non laudantium sed. Quo sed rem et. Corrupti exercitationem dicta placeat assumenda eaque eos. Modi laborum harum velit debitis ea."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.039366"], ["updated_at", "2019-02-21 23:52:20.039366"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ullam Distinctio Voluptas Quaerat Qui Necessitatibus Est Eius."], ["description", "Consectetur est enim corporis labore veritatis sed voluptate. Sed repellendus et est facilis consequatur nisi animi. Sunt beatae quas corporis quibusdam delectus illo sequi. Voluptatem vero hic expedita rerum repellat reiciendis. Minus dolore cupiditate quaerat veritatis voluptate explicabo."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.044240"], ["updated_at", "2019-02-21 23:52:20.044240"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Velit Et Facere Non Vero."], ["description", "Est voluptate suscipit est ex aliquam. Esse earum nemo repellat et. Voluptatum fuga sit quibusdam eaque voluptatem voluptatem. Voluptas perferendis ut enim iusto quia. Fugit perferendis eum ipsam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.049528"], ["updated_at", "2019-02-21 23:52:20.049528"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Qui Quo Neque Laborum."], ["description", "A quo eum excepturi modi earum. Sed ea id dolor ex non. Sapiente a nihil at voluptate est corporis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.054229"], ["updated_at", "2019-02-21 23:52:20.054229"]]
+  [1m[35m (4.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Quasi Blanditiis Autem Et."], ["description", "Dolores eos debitis odio est sint ea. Libero distinctio autem ut. Corrupti dolorem fugit molestias sunt beatae omnis sit. Commodi quod quidem omnis id."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.061546"], ["updated_at", "2019-02-21 23:52:20.061546"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Sequi Beatae Et Consequuntur Ut Laudantium Itaque Vel."], ["description", "Voluptatem quis impedit. Quae voluptas aut tempora. Deserunt reiciendis modi est cum totam dolor. Quam cum iusto consequatur perferendis assumenda nobis suscipit. Id quia dignissimos."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.066568"], ["updated_at", "2019-02-21 23:52:20.066568"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Velit Minus Dolor Culpa."], ["description", "Sint repellendus recusandae veniam consectetur laborum sit assumenda. Sunt quibusdam vel quia consequatur veniam odit. Tempore deleniti vel."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.070754"], ["updated_at", "2019-02-21 23:52:20.070754"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Sed Ab Necessitatibus Explicabo Nobis Corporis Temporibus Ea Omnis."], ["description", "Cumque expedita accusamus temporibus. Impedit quia earum neque cupiditate. Aliquam corporis ab et aut sit qui. Similique eligendi vel. Iusto voluptas cum ex."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.074876"], ["updated_at", "2019-02-21 23:52:20.074876"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Et Et Quo Iusto Neque Consectetur Iste Et Et."], ["description", "Sit iure facere sint molestias omnis magni. Sit magnam suscipit. Quo fugit consequuntur. Voluptatibus et numquam labore odit natus est. Earum dolor aperiam qui."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.079156"], ["updated_at", "2019-02-21 23:52:20.079156"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Nobis Corrupti Commodi Voluptatem Corporis Eos In Soluta Assumenda."], ["description", "Sequi facilis nesciunt quaerat. Ducimus tenetur officia facere explicabo dolor consequatur. Perferendis nisi illo. Repellat officiis et quo et. Ea voluptas occaecati et et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.083828"], ["updated_at", "2019-02-21 23:52:20.083828"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Ut Id Nam Et Minus Dolorem Quae."], ["description", "Architecto quaerat veniam odit quo aut cum. Qui est eius nobis voluptatem sed. Enim autem molestias rem nihil."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.088288"], ["updated_at", "2019-02-21 23:52:20.088288"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Cum Qui Sapiente Suscipit."], ["description", "Temporibus delectus aut et. Minus dolorum rerum exercitationem rem aliquam. Aspernatur sapiente corporis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.092606"], ["updated_at", "2019-02-21 23:52:20.092606"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Architecto Pariatur Velit Ut."], ["description", "Autem pariatur fugiat voluptatem doloremque. Fugit et qui officiis nesciunt. Rem molestiae temporibus ut. A natus dignissimos aut suscipit. Aliquam illum numquam amet consequatur voluptatem magnam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.097246"], ["updated_at", "2019-02-21 23:52:20.097246"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ea Qui Fugit Enim."], ["description", "A quod et cumque. Ratione recusandae mollitia. Velit facilis corporis aperiam accusamus consequatur suscipit quam. Possimus suscipit rem omnis. Voluptate nulla velit voluptatibus ad."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.101492"], ["updated_at", "2019-02-21 23:52:20.101492"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Et Aspernatur Doloribus Culpa."], ["description", "Facilis minus quod. Dolores ducimus sed. Et modi aut optio soluta. Ut aut earum animi. Provident non non et consequatur eligendi doloribus."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.105628"], ["updated_at", "2019-02-21 23:52:20.105628"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Nihil Totam Quos Voluptatibus."], ["description", "Libero occaecati sequi numquam molestiae. Unde doloremque dolorum magni. Voluptate consequuntur velit."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.109712"], ["updated_at", "2019-02-21 23:52:20.109712"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Vero Libero Quidem Officia Repellat Omnis Nihil."], ["description", "Quam aut in exercitationem aut dolorem minus. Totam repellendus non facilis ab nemo. Autem quod id et quis et sequi illo."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.114110"], ["updated_at", "2019-02-21 23:52:20.114110"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Perspiciatis Quia Et Qui Ipsa Aliquam Illo Unde Vitae."], ["description", "Placeat quasi error et est dolorem. Quo similique sit. Perspiciatis modi voluptate qui dignissimos. Iusto sapiente ullam laboriosam repellat."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.118740"], ["updated_at", "2019-02-21 23:52:20.118740"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Harum Minus Fugiat Sit Tempora Tempore Assumenda Quia."], ["description", "Quidem qui ab quae porro consequatur. Dignissimos tempore amet deserunt quas aliquam dolorum tempora. Similique quisquam dolor magnam et nulla animi. Necessitatibus dolores consequatur repellendus occaecati beatae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.123639"], ["updated_at", "2019-02-21 23:52:20.123639"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Voluptas Non Nostrum Et Nihil Quam Nesciunt Inventore Consequatur."], ["description", "Laboriosam officia voluptatem rem tempora temporibus eum sed. Aut est laboriosam sunt aut ut sit ipsa. Quis cupiditate sunt in eum autem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.128128"], ["updated_at", "2019-02-21 23:52:20.128128"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Quasi Delectus Ab Soluta Officia."], ["description", "Quasi totam quisquam enim ullam debitis et voluptatem. Hic repellendus reiciendis. Et debitis sunt laboriosam rerum. Dolorem iusto ut qui esse quo ad. Aliquam nesciunt ut similique."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.132006"], ["updated_at", "2019-02-21 23:52:20.132006"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Tempora Minima Non Quidem Quia Non Nulla In."], ["description", "Nostrum voluptas aspernatur officiis illum doloribus numquam quia. Quae exercitationem tenetur sunt. Ab voluptas perspiciatis doloribus et facilis non. Illum officia sed perspiciatis omnis sed aspernatur corrupti."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.136129"], ["updated_at", "2019-02-21 23:52:20.136129"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Omnis Velit Laborum Et Facilis Qui Qui Et."], ["description", "Repudiandae earum et debitis. Neque ex ab suscipit itaque consequatur. Sit enim consequuntur exercitationem voluptas itaque voluptatum. Aliquid dolor veritatis non voluptas."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.140867"], ["updated_at", "2019-02-21 23:52:20.140867"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Eum Atque Explicabo Et Est Illum Est Exercitationem."], ["description", "Nobis quidem sapiente qui qui ipsum. Aliquam vero veritatis vel molestias ratione quasi perspiciatis. Sit voluptatem voluptatibus harum dolorem qui consectetur totam. Adipisci autem impedit est ipsa."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.145713"], ["updated_at", "2019-02-21 23:52:20.145713"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Ut Sint Quas Et Impedit Rerum Vitae Illum Quis."], ["description", "Cupiditate eveniet rerum mollitia optio qui est aut. Nihil et autem accusamus iusto qui rerum nam. Molestias aut magnam. Velit sed nulla nihil. Id voluptatem corporis autem dicta."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.150628"], ["updated_at", "2019-02-21 23:52:20.150628"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aut Aut Perspiciatis Possimus Ea Voluptatem Autem."], ["description", "Quo ratione perferendis ex atque. Fugit aperiam consequatur libero ipsam. Est deserunt modi placeat fugiat et. Sint autem similique. Ut modi odio officiis maiores quis et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.155207"], ["updated_at", "2019-02-21 23:52:20.155207"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Suscipit Et Nam Mollitia."], ["description", "Neque doloribus et quae et nihil repudiandae quo. Quaerat molestiae a aut illum et eum. Commodi occaecati nulla dolore autem consequatur aut autem. Quia est accusantium qui."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.159612"], ["updated_at", "2019-02-21 23:52:20.159612"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Dignissimos Officiis Esse Eveniet Illo Corrupti."], ["description", "Molestiae quia blanditiis placeat. Qui molestiae impedit dolor sit et rerum. Perspiciatis ea rerum recusandae totam aut rerum iure. Eveniet sunt reiciendis et rerum. Ut nisi aliquid omnis officiis reiciendis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.164849"], ["updated_at", "2019-02-21 23:52:20.164849"]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Commodi Quam Perspiciatis A Sit Perferendis Voluptatum Laudantium Fugit."], ["description", "Id reprehenderit ab. Delectus voluptatibus qui. Neque vitae et modi quos provident omnis quia. Dolorum dolorem repudiandae. Quo molestias recusandae ut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.172542"], ["updated_at", "2019-02-21 23:52:20.172542"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ut Minima Dicta Temporibus Est Voluptatibus At Soluta."], ["description", "Explicabo aspernatur qui voluptas. Omnis autem quo aut ut fugit suscipit sed. Veritatis suscipit adipisci deserunt molestias. Voluptatem minima voluptas fugit rem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.177293"], ["updated_at", "2019-02-21 23:52:20.177293"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Veritatis Sed Ducimus Cupiditate Praesentium Quia Eligendi Et Qui."], ["description", "Rerum debitis quo perferendis eius. In neque consequatur sunt. Eius rerum nihil excepturi et quisquam. Vero est non quae. Vero quos excepturi et qui magni qui quidem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.182236"], ["updated_at", "2019-02-21 23:52:20.182236"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aliquid Cumque Et Et Dolorem."], ["description", "Blanditiis a omnis rerum qui molestiae. Veniam quisquam qui voluptas. Consequatur eligendi unde et repudiandae beatae. Dicta rem sapiente."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.186406"], ["updated_at", "2019-02-21 23:52:20.186406"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Velit Sint Vero Quo Sequi Aut Possimus Voluptatem."], ["description", "Enim odit quibusdam mollitia omnis ut vel voluptatum. Tempora illum hic illo consequatur debitis. Aut numquam enim eaque similique eos quod omnis. Nisi aliquam aut exercitationem. Itaque maxime aut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.191596"], ["updated_at", "2019-02-21 23:52:20.191596"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Velit Sed Esse Sit Voluptas In Ut Aut."], ["description", "Qui voluptas autem error voluptatem doloribus nostrum molestiae. Quidem sit qui quos voluptatem sed illo sint. Minus ut voluptatem recusandae voluptatum voluptas iste facilis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.197441"], ["updated_at", "2019-02-21 23:52:20.197441"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Iste Quas Dicta Sed Ut Sit Minus Possimus."], ["description", "Dolores qui possimus. Corrupti non impedit laboriosam optio rem sint suscipit. Aut autem ratione perferendis totam nihil. Quam dolores et hic maiores. Qui at reiciendis eum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.203570"], ["updated_at", "2019-02-21 23:52:20.203570"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Est Aut Accusantium Eveniet."], ["description", "In dolorem ex ea aliquid molestias. Molestiae corrupti atque eum ex. Ut natus eius. Est molestiae assumenda quis consequatur. Sunt expedita et vero minima labore sed ipsum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.209146"], ["updated_at", "2019-02-21 23:52:20.209146"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Soluta Molestiae Ex Qui Repudiandae Quae Nulla Ut."], ["description", "Laudantium molestias vitae. Cumque provident accusantium id sit. Necessitatibus eos tempore qui alias."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.215329"], ["updated_at", "2019-02-21 23:52:20.215329"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Placeat Commodi Odit Deserunt."], ["description", "Officia consequuntur a dolor velit vitae. Molestiae assumenda saepe sunt eos excepturi molestias aut. Quia nisi non ipsam quis. Repudiandae et quia. Dolorum fugit magni."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.221276"], ["updated_at", "2019-02-21 23:52:20.221276"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Ratione Non Suscipit Praesentium Quibusdam Voluptatibus Voluptatem Illo Omnis."], ["description", "Deleniti adipisci illum asperiores voluptate est praesentium in. Quasi harum omnis aut est aliquid maiores excepturi. Adipisci repudiandae dolorum occaecati earum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.228980"], ["updated_at", "2019-02-21 23:52:20.228980"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Id Placeat Nisi Itaque Quaerat."], ["description", "Voluptas deleniti dolorum corrupti quidem. Doloremque expedita excepturi quia incidunt. Non qui dolor rerum. Ullam corrupti dignissimos aut exercitationem laudantium non."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.234215"], ["updated_at", "2019-02-21 23:52:20.234215"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Blanditiis Iste Omnis Corrupti."], ["description", "Consequuntur dicta delectus est voluptatum. Aliquid rerum quis quo. Perferendis qui sunt. Enim magni sint."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.239182"], ["updated_at", "2019-02-21 23:52:20.239182"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Iste Necessitatibus Dolorem Qui Vitae Cumque."], ["description", "Facilis consequatur quia. Voluptatem quibusdam molestias exercitationem dolore velit illum. Laudantium et consectetur mollitia doloribus earum dicta libero."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.244055"], ["updated_at", "2019-02-21 23:52:20.244055"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Voluptates Corrupti Repellat Ut Inventore Placeat Iste Animi Quis."], ["description", "Modi sint ut architecto cumque. Id ipsa voluptas quaerat. Harum sint eaque aut expedita. Nemo doloremque itaque. Adipisci totam id."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.248651"], ["updated_at", "2019-02-21 23:52:20.248651"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Mollitia A Culpa Sequi Fuga Voluptatem Facilis."], ["description", "Aut quibusdam eligendi omnis. Dolorem laudantium magnam non. Consequatur blanditiis nemo possimus quisquam ex."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.253692"], ["updated_at", "2019-02-21 23:52:20.253692"]]
+  [1m[35m (4.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Eum Est Et Aspernatur Commodi Vero Laborum Qui Sit."], ["description", "Vero sapiente atque eos. Voluptatem magni sunt esse qui neque. Veritatis in sunt. Rem error non sed aut nam debitis. Corrupti voluptate architecto."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.261287"], ["updated_at", "2019-02-21 23:52:20.261287"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Laborum Occaecati Explicabo Adipisci Quia."], ["description", "Sit sit repellat eius. Ut voluptatum possimus consectetur voluptates consequuntur eum. Laudantium voluptatum consequatur voluptas quaerat deleniti. Pariatur ipsa incidunt est. Quam odit praesentium."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.265845"], ["updated_at", "2019-02-21 23:52:20.265845"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Cum Iste Sed Eum Est Fugit Ut Sint Dolor."], ["description", "Maiores quam beatae. Corporis aspernatur perspiciatis. Qui est laborum voluptatem minus iste recusandae. Id et odit."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.270231"], ["updated_at", "2019-02-21 23:52:20.270231"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ipsa Amet Dolorem Non Et."], ["description", "Sequi atque optio molestiae est ea a dolorem. Atque maxime similique ipsum. Voluptatem aut sunt itaque deserunt. Dolorum quo deleniti aut sit eveniet et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.274945"], ["updated_at", "2019-02-21 23:52:20.274945"]]
+  [1m[35m (5.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Tenetur Alias Aliquid Mollitia Esse."], ["description", "Ipsum ea est laborum. Perferendis molestiae architecto in. Ad magnam assumenda aspernatur voluptatem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.283102"], ["updated_at", "2019-02-21 23:52:20.283102"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Minima Deleniti Nisi Esse Ipsam."], ["description", "Quod debitis aperiam in molestias quia voluptatem. Nulla voluptatem officia soluta omnis. Est repellendus ad."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.287528"], ["updated_at", "2019-02-21 23:52:20.287528"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Excepturi Itaque Sed Deleniti Sed Consequatur."], ["description", "Aut iure ut natus eum necessitatibus fugit quis. Debitis culpa ad minus nostrum autem. Explicabo qui omnis et et et. Eum et voluptatum. Distinctio reiciendis unde quo qui ipsa non est."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.292004"], ["updated_at", "2019-02-21 23:52:20.292004"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Minus Aliquid Accusantium Id Doloremque Perspiciatis Deleniti Est."], ["description", "Omnis maiores nulla aut inventore aut culpa. Veniam earum velit dolor quis omnis qui repellat. Nesciunt impedit beatae. Beatae sed rerum sint corporis. Excepturi eum placeat quis ratione quae fugiat qui."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.297215"], ["updated_at", "2019-02-21 23:52:20.297215"]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Placeat Nisi Libero Modi Veritatis."], ["description", "Aliquam magnam odit. Sequi expedita voluptas autem ea voluptatem. Iusto aut ut nemo blanditiis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.305254"], ["updated_at", "2019-02-21 23:52:20.305254"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Doloribus Est Laboriosam Est Qui Quae Voluptate Optio Eos."], ["description", "Eius vitae optio perferendis. Illo eum et officia hic sunt saepe nulla. Commodi saepe fugit est. Molestiae commodi dignissimos odit. Optio consequatur ipsam et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.309951"], ["updated_at", "2019-02-21 23:52:20.309951"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Velit Dignissimos Omnis Officiis Placeat Quis Aliquid."], ["description", "Et voluptatem rerum repellendus illum recusandae accusamus laboriosam. Ad iusto aut deserunt magnam consequatur omnis molestiae. Consequuntur alias aspernatur blanditiis vitae eum repellendus. Consequatur dolor sint vel. Et voluptatem nam quia."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.314995"], ["updated_at", "2019-02-21 23:52:20.314995"]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Occaecati Aut Quo."], ["description", "Sunt accusamus numquam quaerat pariatur ad tempora ullam. Hic minima explicabo. Velit dignissimos laborum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.322767"], ["updated_at", "2019-02-21 23:52:20.322767"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Consequuntur Vel Dolor Beatae Ipsa Omnis Voluptatem Animi Sequi."], ["description", "Magnam dolores sapiente corrupti sit. Omnis et nihil. Veritatis voluptates atque eius voluptatem. Eveniet alias sequi aut vitae. Totam amet rerum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.327441"], ["updated_at", "2019-02-21 23:52:20.327441"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Blanditiis Quo Totam Facere Vitae Quasi Omnis Quis."], ["description", "Placeat et et provident vero voluptas voluptas sunt. Voluptatem cum consequatur non facere nulla at. Sunt ipsum sapiente maxime voluptate itaque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.332012"], ["updated_at", "2019-02-21 23:52:20.332012"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Aliquid Enim Dolor Officiis Nobis."], ["description", "Ut et laborum magnam. Ullam architecto voluptas quisquam itaque. Est sint quaerat voluptate magnam at cumque. Id fugit eius est culpa vitae consequuntur error. Sit repudiandae pariatur voluptas."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.336538"], ["updated_at", "2019-02-21 23:52:20.336538"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Nihil Ea Voluptatem Maiores Natus."], ["description", "Mollitia quasi quisquam earum amet rem aut. Exercitationem aut distinctio illum voluptas esse et qui. Ratione ea nam quisquam sed. Eum sapiente ut assumenda alias."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.340977"], ["updated_at", "2019-02-21 23:52:20.340977"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Ut Corporis Aut Modi In Ut Eum Iure."], ["description", "Voluptatem quis incidunt nesciunt qui voluptates. Quae est odio. Dicta voluptatem animi accusantium distinctio at debitis. Et et est maxime quia architecto. Natus et quia veritatis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.345763"], ["updated_at", "2019-02-21 23:52:20.345763"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Dolore Commodi Ea Sunt Eos Optio."], ["description", "Nisi ut omnis dolorem. In voluptatem nobis explicabo nisi incidunt ad non. Velit voluptatem culpa numquam eveniet. Sed vitae maxime culpa. Doloremque alias qui aliquam a."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.350280"], ["updated_at", "2019-02-21 23:52:20.350280"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Consequuntur Non Non Placeat."], ["description", "Dolores itaque explicabo modi molestiae est molestias. Doloribus vero tempore harum voluptates labore nostrum. Voluptatum incidunt accusantium sequi aspernatur rem laboriosam iure. Quisquam amet debitis dolor necessitatibus qui dolorum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.355387"], ["updated_at", "2019-02-21 23:52:20.355387"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Autem Omnis Et Ducimus."], ["description", "Et quasi consequatur. Expedita voluptatem voluptate. Enim aut iusto libero nobis aut repudiandae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.359940"], ["updated_at", "2019-02-21 23:52:20.359940"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Et Optio Sit Est."], ["description", "Necessitatibus dolores fugit quasi aspernatur ipsum. Iste similique quis nobis ut facilis dolorum voluptatem. Deleniti et aut repellat aperiam corporis. Culpa possimus totam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.364429"], ["updated_at", "2019-02-21 23:52:20.364429"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Rerum Occaecati Pariatur Aliquam Ea Sapiente Optio Et Odit."], ["description", "Neque provident reprehenderit in aliquid et. Ad dolore aut. Expedita ea consequatur necessitatibus et vero. Minima sed eligendi ea provident occaecati accusamus. Expedita et minima."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.368843"], ["updated_at", "2019-02-21 23:52:20.368843"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Qui Fugiat Velit Libero Illo Debitis Cum Quae."], ["description", "Eius suscipit et dolorum. Natus repellat facere reiciendis. Et veniam maxime libero ipsa officia aut in."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.372795"], ["updated_at", "2019-02-21 23:52:20.372795"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Eum Quibusdam Vel Eius Vero Id Aperiam Accusamus Illum."], ["description", "Nesciunt similique culpa repellendus est. Explicabo quaerat vel. Beatae velit fugiat ea qui. Rem magni voluptatem est sint animi. Est minus rerum porro assumenda quidem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.377588"], ["updated_at", "2019-02-21 23:52:20.377588"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Et Dolorem Corporis Dignissimos Quasi Officia Illum Sit Facere."], ["description", "Hic quasi cumque sunt illum harum voluptas. Aut veritatis et quas. Delectus repellendus veritatis non omnis. Consequuntur aperiam quidem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.382812"], ["updated_at", "2019-02-21 23:52:20.382812"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Est Voluptate Sint Vero Ipsam Sequi Qui Nulla Asperiores."], ["description", "Error officiis voluptatem nemo aliquid. Velit non at officia perferendis qui tempora sit. Fugiat eligendi totam sed placeat enim. Maiores est nemo accusantium aut aut perferendis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.388239"], ["updated_at", "2019-02-21 23:52:20.388239"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Ut Ut Qui Necessitatibus."], ["description", "Voluptates est ut qui laboriosam iure saepe. Culpa at dolores qui qui facilis officia. Assumenda enim est minima. Enim eligendi est ut assumenda."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.393235"], ["updated_at", "2019-02-21 23:52:20.393235"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Laudantium Aut Qui Voluptatem."], ["description", "Sint quia quam qui autem ad vel praesentium. Error reprehenderit ipsum rem est. Deserunt qui voluptates accusamus animi."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.398649"], ["updated_at", "2019-02-21 23:52:20.398649"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Qui Nostrum Laudantium Nobis Cum Accusantium Reprehenderit Dolorem."], ["description", "A autem ex vitae blanditiis animi. Repellat iusto consequatur odio qui saepe magni. Natus quam omnis sed repellendus voluptas tenetur ut. Modi autem perferendis quia. Accusamus soluta eius iusto qui quas."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.403240"], ["updated_at", "2019-02-21 23:52:20.403240"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Facilis Sit Id Tempore Rem Et."], ["description", "Corporis pariatur ut repudiandae blanditiis. Dolorum ea eligendi quaerat optio ab enim. Voluptatem omnis culpa molestiae sit exercitationem laudantium ut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.407547"], ["updated_at", "2019-02-21 23:52:20.407547"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "A Quisquam Qui Voluptatem Quis."], ["description", "Doloremque nihil quisquam voluptate est quia. Est perspiciatis eveniet. Ea natus fugit sapiente."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.411800"], ["updated_at", "2019-02-21 23:52:20.411800"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ea Impedit Voluptate Quia."], ["description", "Error eius nemo. Voluptatum laborum perspiciatis dolorum. Et aliquid quisquam eum in."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.416406"], ["updated_at", "2019-02-21 23:52:20.416406"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Quo Sapiente Et Temporibus Eum."], ["description", "Similique non nam. Dolor iusto ut recusandae. Earum qui magnam vero quidem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.421445"], ["updated_at", "2019-02-21 23:52:20.421445"]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Officia Cumque Maxime Ut Odio Non."], ["description", "Veniam qui sint animi reiciendis. Dolor et debitis aliquam sunt. Impedit quo repellat. Ut architecto laboriosam totam quisquam omnis nam quis. Animi id quam deleniti quod quas."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.429281"], ["updated_at", "2019-02-21 23:52:20.429281"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Modi Hic Iure Nesciunt Quia Voluptas."], ["description", "Ipsam eum quaerat. Nihil omnis nihil molestiae eveniet labore. Nostrum voluptatum molestiae corporis velit a consequatur. Sint in praesentium sit et harum vitae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.434076"], ["updated_at", "2019-02-21 23:52:20.434076"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Est Sit Sapiente Non Rerum."], ["description", "Aliquid ut voluptatem quia. Esse ullam est consequatur autem amet aut et. Odio voluptatem magni voluptates nihil."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.439407"], ["updated_at", "2019-02-21 23:52:20.439407"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sed Velit Quod Quisquam Exercitationem Est Officiis Voluptas Dignissimos."], ["description", "Nam hic magnam aliquid vel velit. Quos maiores quis qui molestiae in ab aliquam. Vero corrupti sit error. Odit debitis voluptatem temporibus repellendus laboriosam maxime nam. Est repellendus ut voluptas ipsa ad veniam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.444433"], ["updated_at", "2019-02-21 23:52:20.444433"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Cum Voluptatem Debitis Delectus."], ["description", "Ipsa veniam aspernatur. Voluptas velit maxime non. Dolores exercitationem sed illum. Deleniti magni velit est adipisci minima. Cumque ullam unde debitis animi est sapiente rerum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.450950"], ["updated_at", "2019-02-21 23:52:20.450950"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Eius Libero Alias Saepe Excepturi Et Numquam."], ["description", "Quos omnis et. Perspiciatis dolores similique vel. Dolores ullam qui."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.456075"], ["updated_at", "2019-02-21 23:52:20.456075"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Dicta Asperiores Qui Quam Vero Quia Tenetur."], ["description", "Non rerum qui quia ea officiis. Modi dolores sit. Et ut asperiores debitis non neque laudantium."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.460775"], ["updated_at", "2019-02-21 23:52:20.460775"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Et Facilis Non Beatae Qui Assumenda Est Ratione Occaecati."], ["description", "Ex rem nihil impedit. Minus quia consequuntur. Quis sunt eveniet. Eius et est in magnam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.465727"], ["updated_at", "2019-02-21 23:52:20.465727"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Animi Voluptatem Perspiciatis Quae Sint Minima Eum Voluptatibus Sunt."], ["description", "Nostrum dicta velit dolor reprehenderit beatae. Quis est aut odio. Eum id corrupti. Quasi consequatur quia."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.470675"], ["updated_at", "2019-02-21 23:52:20.470675"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Quas Eveniet Impedit At."], ["description", "Repellat mollitia fuga nesciunt quibusdam. Ratione consectetur ut quisquam. Dolorum aut voluptate tenetur animi dolores. Consequatur sed dolor qui minus nisi sunt."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.476111"], ["updated_at", "2019-02-21 23:52:20.476111"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ut Cum Excepturi Ullam Vel Laboriosam."], ["description", "Quod maiores eligendi autem unde quis perspiciatis. Aliquam vitae fugit optio ut hic. Totam quasi excepturi sequi praesentium consectetur. Enim voluptatem libero tempora."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.481667"], ["updated_at", "2019-02-21 23:52:20.481667"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Qui Ut Minus Quia Nisi Aliquid."], ["description", "Rerum ut quas deserunt qui autem dolores quo. Dicta dolor quia molestiae. Molestiae architecto consectetur. Placeat et sed ullam et aperiam. Voluptatibus officiis sit nihil."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.486915"], ["updated_at", "2019-02-21 23:52:20.486915"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Voluptatem Sint Corrupti Sed."], ["description", "Sed nostrum illum. Nulla dolores tempore sit eos. Aut quo quis culpa. Deleniti doloribus molestiae repellendus dolore a. Et consequuntur natus."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.491822"], ["updated_at", "2019-02-21 23:52:20.491822"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Magnam Nam Dolor Quos Commodi Deserunt Quo Qui Molestiae."], ["description", "Non iusto minima hic rem id atque nostrum. Molestiae excepturi autem dignissimos. Sunt maiores qui. Dolorem sapiente hic iure unde non aut aliquid. Tempora voluptate expedita praesentium."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.496877"], ["updated_at", "2019-02-21 23:52:20.496877"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Tempore Similique Officiis Optio Et Quia Molestiae Nam."], ["description", "Aut vero quia aut facere voluptatem doloribus. Repellendus labore molestiae natus in rerum ea. Blanditiis tempore voluptatem amet at deleniti maiores qui. Assumenda occaecati error et provident eveniet excepturi. Omnis tenetur sunt quis error aliquid porro."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.501550"], ["updated_at", "2019-02-21 23:52:20.501550"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Aut Qui Aperiam Quisquam Est Totam Libero Ipsa Modi."], ["description", "In quia quo et ratione et possimus non. Similique deleniti at excepturi rerum nihil a molestiae. Rerum dolores laudantium. Placeat laudantium non voluptas quae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.505980"], ["updated_at", "2019-02-21 23:52:20.505980"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Optio Eligendi Ea Iusto Deleniti."], ["description", "Aut qui minima quis deleniti voluptatem hic. Labore quia sit. Alias voluptate ipsum aut aut qui at nihil. Similique in cupiditate. Id ut autem sint quis repudiandae exercitationem et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.510553"], ["updated_at", "2019-02-21 23:52:20.510553"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Et Ea Omnis Quo Odit Nihil Quia."], ["description", "Doloremque rerum nisi harum mollitia enim rem expedita. Delectus reiciendis alias. Ipsa et tempore sequi. Ut dolor libero."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.515043"], ["updated_at", "2019-02-21 23:52:20.515043"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Repudiandae Voluptatem Nulla Nostrum Sapiente Architecto Culpa."], ["description", "Dolor placeat eum incidunt. Et consequatur nesciunt nostrum ea sint sit. Soluta qui aliquid non eum officiis porro assumenda. Voluptas eos id qui et porro."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.519251"], ["updated_at", "2019-02-21 23:52:20.519251"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Voluptatem Numquam Quidem Nobis Rerum Repellendus Praesentium Id At."], ["description", "Eum sunt dolores quo at. Suscipit ipsum quasi corrupti perspiciatis odit nihil aut. Optio sunt consequuntur. Magni nemo id aperiam placeat."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.523035"], ["updated_at", "2019-02-21 23:52:20.523035"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Eum Tenetur Vitae Totam Nam."], ["description", "Quidem voluptates rerum repellat eius. Vero labore quis consequatur. Itaque ab quia eos et accusantium ad nobis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.528111"], ["updated_at", "2019-02-21 23:52:20.528111"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Velit Dolores Sint Quas."], ["description", "Corrupti veniam est minima dicta ratione veritatis neque. Vel est adipisci eos. Mollitia voluptas eaque dolorum a."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.533696"], ["updated_at", "2019-02-21 23:52:20.533696"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Qui Suscipit Atque Sit Unde Et Alias."], ["description", "Voluptate voluptas ut saepe suscipit asperiores. Cumque tenetur perferendis sed provident unde autem. A magni accusantium."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.538710"], ["updated_at", "2019-02-21 23:52:20.538710"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Cumque Quasi Omnis Eos Natus Unde Totam Necessitatibus Optio."], ["description", "Quos voluptatem qui culpa similique omnis ipsum. Libero quia voluptatum sit praesentium. Quam nobis autem ut totam odit voluptate. Tenetur minus in magnam ut non. Quo tempora architecto at omnis id."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.543779"], ["updated_at", "2019-02-21 23:52:20.543779"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Voluptatum Magnam Harum Dolorem Doloribus."], ["description", "Et possimus voluptatem assumenda. Quo nihil dicta consectetur tempore culpa reiciendis et. Et dolorum provident omnis aut harum. Non tempora ut eum illo ducimus voluptatem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.548818"], ["updated_at", "2019-02-21 23:52:20.548818"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Qui Unde Nam Labore Omnis Aperiam Optio."], ["description", "Enim placeat enim id. Rerum dolorem consequatur ut nostrum dolore. Provident exercitationem excepturi culpa autem alias dolores molestiae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.553458"], ["updated_at", "2019-02-21 23:52:20.553458"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Numquam Blanditiis Sunt Eius Ullam Ab Et Cumque."], ["description", "Voluptate reprehenderit eaque et impedit sit est. Veniam vitae aperiam eveniet nihil vel. Necessitatibus odit placeat et aut rerum dolorum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.558147"], ["updated_at", "2019-02-21 23:52:20.558147"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Dicta Explicabo Exercitationem Iusto."], ["description", "Et consequuntur eius. Consectetur id quas explicabo qui qui dolores. Fugiat culpa quos vel voluptates sint."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.563108"], ["updated_at", "2019-02-21 23:52:20.563108"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Dolorum Necessitatibus Consequatur Aspernatur Possimus Amet Architecto."], ["description", "Laboriosam ut ut aut sunt ut laborum voluptas. Deserunt itaque quia iure omnis eaque maxime. Possimus sed quod."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.568629"], ["updated_at", "2019-02-21 23:52:20.568629"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Nisi Aut Sunt Ut Voluptate Ducimus."], ["description", "Sint consectetur eius pariatur quia quo occaecati. Harum repellendus adipisci. Doloremque dolorem voluptas explicabo rerum et. Assumenda nam magnam maxime iusto. Eius et facilis ut distinctio."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.574453"], ["updated_at", "2019-02-21 23:52:20.574453"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Reprehenderit Officia Qui Amet."], ["description", "Sequi natus non deserunt quis officia odio. Nulla ea officia ut. Quod repellat qui deleniti dolores aut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.580110"], ["updated_at", "2019-02-21 23:52:20.580110"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Rerum Cumque Omnis Vel Ex Eius Explicabo Enim Accusantium."], ["description", "Quis nobis repudiandae omnis accusantium quae repellat. Quae illo nihil dolorem voluptatum aut aut. Ut voluptatem harum sed vel."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.585497"], ["updated_at", "2019-02-21 23:52:20.585497"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Doloremque Velit Aspernatur Recusandae Quia Reprehenderit Iste."], ["description", "Velit qui hic impedit sit voluptatum est. Amet officiis soluta et. Atque cumque perferendis magni architecto blanditiis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.591085"], ["updated_at", "2019-02-21 23:52:20.591085"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sit Ab Est Sit."], ["description", "Minus perspiciatis ut quasi quibusdam modi et qui. Et sequi molestias accusamus repellat amet voluptas. Et quidem qui quasi vero. Officiis rerum quo non. Voluptates cupiditate error totam omnis reiciendis sed."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.596664"], ["updated_at", "2019-02-21 23:52:20.596664"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Dolorem Fugit Eius Sunt Magnam Ipsam Est Ab."], ["description", "Ut dolore culpa. Ut et est. Repellendus qui consectetur illo eveniet sunt necessitatibus velit. Earum dolorum non unde suscipit consequatur."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.601927"], ["updated_at", "2019-02-21 23:52:20.601927"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Quasi Animi Qui Sit Velit Repellat."], ["description", "In qui sed. Aspernatur maxime commodi ea autem quam doloribus. Nihil blanditiis neque cupiditate. Quia exercitationem dolorem suscipit et ut tenetur."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.606972"], ["updated_at", "2019-02-21 23:52:20.606972"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Qui Fugiat Est Fugit Eos Deserunt Reiciendis."], ["description", "Maxime cupiditate quas occaecati qui. Eveniet accusamus beatae explicabo repellendus. Est quia debitis aut autem dicta. Dolorem repellendus temporibus ad saepe vel velit. Delectus officiis debitis non."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.612330"], ["updated_at", "2019-02-21 23:52:20.612330"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Error Repellat Qui Et Temporibus Molestiae Recusandae Ut At."], ["description", "Et iure ullam. Numquam sed eum. Fugiat nam mollitia quae perferendis alias."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.617121"], ["updated_at", "2019-02-21 23:52:20.617121"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aut Rerum Tempore Aut Atque Consequatur Ab."], ["description", "Nihil dolor aut omnis. Quibusdam labore non. Est veniam reiciendis. Reiciendis in omnis esse perferendis dicta laudantium."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.621112"], ["updated_at", "2019-02-21 23:52:20.621112"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Est Natus Veniam Aspernatur Omnis Sit Ut Accusamus."], ["description", "Architecto et omnis. Quasi ut iste neque rerum. Non non aliquid."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.624943"], ["updated_at", "2019-02-21 23:52:20.624943"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Voluptate Quas Laboriosam Ut Expedita Reiciendis."], ["description", "Ut quis ducimus reiciendis. Sunt quibusdam eaque assumenda. Eos rem voluptatem quis et. Dolor inventore earum nihil ut aut saepe voluptas."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.629151"], ["updated_at", "2019-02-21 23:52:20.629151"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Praesentium Facere Occaecati Atque Itaque Ut Enim."], ["description", "Qui et voluptates quia amet officia eaque. Exercitationem nulla fugit expedita earum dolores. Porro non vitae aspernatur voluptates asperiores. Pariatur nesciunt quis voluptate explicabo illo est. Autem quos nulla nihil."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.633290"], ["updated_at", "2019-02-21 23:52:20.633290"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Vel Ducimus Et Nemo Possimus."], ["description", "Assumenda adipisci laboriosam autem similique. Et error rem rerum dolorem sit dolores magni. Doloribus blanditiis libero qui ex et quis. Et aut et quos laboriosam omnis ullam ea. Pariatur sapiente sed est quae et autem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.637385"], ["updated_at", "2019-02-21 23:52:20.637385"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Non Porro Dolorem Cumque Quo."], ["description", "Id perspiciatis cum. Et delectus quasi. Quia ex repudiandae deleniti aliquid. Neque placeat adipisci veritatis vitae et commodi. Iure non est molestiae nihil."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.641422"], ["updated_at", "2019-02-21 23:52:20.641422"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Blanditiis Vero Voluptatem Assumenda Unde Aspernatur Dolore Quas."], ["description", "Impedit ducimus molestiae velit aliquid. Sapiente provident quis et ducimus aut est accusamus. Molestias quisquam quam quo atque magni delectus velit. Repudiandae consequuntur corporis accusantium ullam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.645357"], ["updated_at", "2019-02-21 23:52:20.645357"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Exercitationem Explicabo Reiciendis Voluptatibus Blanditiis Quia."], ["description", "Id laborum vel. Voluptatem possimus odit. Et nihil ut temporibus voluptate est. Aliquam unde repellat."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.649236"], ["updated_at", "2019-02-21 23:52:20.649236"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Occaecati Dolor Est Voluptatem Tempore."], ["description", "Culpa atque quia aut illo. Ex distinctio voluptas excepturi officia aut molestiae explicabo. Perspiciatis expedita error blanditiis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.652807"], ["updated_at", "2019-02-21 23:52:20.652807"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Asperiores Sapiente Quibusdam Accusamus Tempora Aut Eum."], ["description", "Sit voluptatem qui. Architecto laboriosam ex tenetur porro ut ad dolore. Libero qui dolorem aspernatur sed. Sed accusamus doloribus iste. Quis a veniam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.656754"], ["updated_at", "2019-02-21 23:52:20.656754"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Suscipit Reiciendis Eum Est Sit Libero Qui."], ["description", "In fugit dolorem repellat qui et. Reiciendis dolor laudantium quibusdam neque esse. Quo quod recusandae sapiente aperiam autem. Sit adipisci expedita. Doloribus placeat beatae id vel rerum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.661058"], ["updated_at", "2019-02-21 23:52:20.661058"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Et Quas Sunt Minima Non Et."], ["description", "Nostrum aut quos. Nisi et velit aut ut quidem. Recusandae qui nobis saepe cumque quos. Est nam explicabo accusamus cumque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.665338"], ["updated_at", "2019-02-21 23:52:20.665338"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Adipisci Doloribus Molestiae Occaecati Delectus Dolorum."], ["description", "In rerum est et. Qui sed at dignissimos magnam rerum voluptate amet. Aut fugit odit consequatur nulla. Magnam ipsam minima in placeat. Ut quia soluta cumque veritatis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.670660"], ["updated_at", "2019-02-21 23:52:20.670660"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Deserunt Harum Ex In Quo."], ["description", "Cum atque laboriosam rerum consequatur eius aut. Doloremque dolores quibusdam qui dolorum aut. Sed vitae nam voluptatibus assumenda."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.677444"], ["updated_at", "2019-02-21 23:52:20.677444"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Voluptatem Dolore Sunt Placeat Et Nisi Facilis In Neque."], ["description", "Eligendi possimus repellendus voluptatem nulla vel. Dolores optio ea in eveniet dolorem praesentium. Quibusdam corrupti nisi aut quisquam sit."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.682444"], ["updated_at", "2019-02-21 23:52:20.682444"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Quia Non Praesentium A Et Ut Perspiciatis."], ["description", "Impedit sint dignissimos dolorum. Ut voluptas soluta. Aut et aut debitis perferendis. Eveniet earum quos qui facilis temporibus nihil molestias."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.688173"], ["updated_at", "2019-02-21 23:52:20.688173"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Non Ullam Ratione Eos Asperiores."], ["description", "Velit veniam consequatur. Asperiores optio esse quia sed. Qui in neque. Aut sit doloribus ut unde et suscipit."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.693427"], ["updated_at", "2019-02-21 23:52:20.693427"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Reprehenderit Possimus Expedita Et."], ["description", "Ipsam sapiente minus odio optio distinctio voluptatibus. Ipsam corrupti omnis dolor inventore ducimus. Iure asperiores ut. Esse quasi molestias aliquam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.698372"], ["updated_at", "2019-02-21 23:52:20.698372"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Ex Perspiciatis Voluptatem."], ["description", "Nihil voluptatum libero. Quia perferendis porro et temporibus. Est blanditiis pariatur et qui. Sequi quaerat quos at vel voluptatem. Rem cum sed."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.703344"], ["updated_at", "2019-02-21 23:52:20.703344"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Repellat Ea In Voluptas."], ["description", "Voluptas qui nulla at laborum corporis aut. Id eum ut voluptas. Ut excepturi corporis tempore et dolores. Suscipit qui voluptatum. Aut repellat minus mollitia corrupti natus quasi officia."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.709399"], ["updated_at", "2019-02-21 23:52:20.709399"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ullam Autem Alias Numquam Nostrum Omnis."], ["description", "Delectus asperiores aliquid nemo aut veniam. Deleniti qui dicta quam exercitationem. Voluptatem in blanditiis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.716085"], ["updated_at", "2019-02-21 23:52:20.716085"]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Id Est Facere Aliquam Eaque."], ["description", "Incidunt sed libero sapiente modi deserunt quis. Doloremque eos nulla velit. Doloremque rerum aut ab dolorum quia repellat minus. Aut quisquam sapiente eaque perferendis labore quis dicta. Aut sit earum dolorem est reprehenderit ullam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.723731"], ["updated_at", "2019-02-21 23:52:20.723731"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Id Id Ipsam Voluptatem Repellat Rem Dolore Voluptate."], ["description", "Commodi iure explicabo unde quis culpa consequatur necessitatibus. Non neque magnam. Hic eveniet est illum rerum dignissimos. Esse impedit illo tenetur voluptas. Voluptas enim autem quo deserunt."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.728208"], ["updated_at", "2019-02-21 23:52:20.728208"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Perspiciatis Aliquid Quia Soluta Id Optio Sequi Aut."], ["description", "Unde consequuntur nihil rerum facere. Et consequatur cum eligendi id error nemo. Deserunt non distinctio. Id quaerat et et expedita explicabo."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.733066"], ["updated_at", "2019-02-21 23:52:20.733066"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Cum Corrupti Voluptatem Sit Sint Molestiae Quaerat Laudantium Asperiores."], ["description", "Commodi voluptatem laboriosam sapiente. Nihil vero et vel sit et eum magnam. Autem ea placeat quo accusantium."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.737307"], ["updated_at", "2019-02-21 23:52:20.737307"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Vel Tempora Et In Alias Quibusdam."], ["description", "Molestiae sed perspiciatis odit minima voluptate. Voluptate ut corporis perferendis. Sed provident aliquam. Veniam sint dolor doloribus odio occaecati. Quis exercitationem non doloremque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.741685"], ["updated_at", "2019-02-21 23:52:20.741685"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Est Ex Magni Autem Molestiae."], ["description", "In et delectus voluptatibus voluptates libero ea. Velit omnis quos. Vitae maiores aut reiciendis nisi. Cupiditate placeat aut sit."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.746327"], ["updated_at", "2019-02-21 23:52:20.746327"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Voluptas Praesentium Sit Vel."], ["description", "Assumenda laborum excepturi at ratione. Et unde odit exercitationem. Et id tenetur fugiat numquam dolor quia itaque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.750758"], ["updated_at", "2019-02-21 23:52:20.750758"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Ut Hic Dolorem Laboriosam Aperiam."], ["description", "Est ratione possimus. Placeat amet ut quis. Voluptates eaque est quam ullam esse."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.763298"], ["updated_at", "2019-02-21 23:52:20.763298"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Harum Ea Voluptates Inventore Consectetur Ut Accusantium."], ["description", "In et quibusdam optio omnis in consequatur aliquam. Inventore itaque et est iusto autem consectetur rerum. Qui possimus non nemo officia quia molestiae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.767982"], ["updated_at", "2019-02-21 23:52:20.767982"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Quod Est Quis Delectus Vitae Amet Molestiae Consectetur Doloribus."], ["description", "Id et eius nam nesciunt eos earum dolorem. Cum sint commodi numquam hic similique et odit. Est id voluptatem maxime. Accusamus similique et magnam nulla."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.773857"], ["updated_at", "2019-02-21 23:52:20.773857"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Animi Alias Laudantium Sunt."], ["description", "Magni nostrum enim quasi fuga. Ea et voluptatem qui enim voluptatibus eum. Ea autem voluptate quo voluptates."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.778808"], ["updated_at", "2019-02-21 23:52:20.778808"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Et Et Inventore Deleniti."], ["description", "Dolores culpa et ut. Qui laboriosam aut. Numquam nesciunt atque. Dolores pariatur accusamus facilis sed cupiditate. Vitae in et quis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.783870"], ["updated_at", "2019-02-21 23:52:20.783870"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Laudantium Dolorum Ut Eius."], ["description", "Voluptas voluptatibus corrupti mollitia laudantium maxime quidem eaque. Incidunt vero pariatur sequi tempore. Ut est id tenetur voluptatibus. Ipsa illum sapiente. In ducimus delectus doloremque veritatis dolores dolorum molestiae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.789718"], ["updated_at", "2019-02-21 23:52:20.789718"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "A Quibusdam Porro Dolores Eos Aliquid Vitae."], ["description", "Necessitatibus reiciendis dolore quidem illo. Qui et totam in aut velit suscipit. Sunt dolorem sit et id enim cupiditate. Cumque et nemo est et cupiditate dolores. Aut provident vitae consequatur."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.794483"], ["updated_at", "2019-02-21 23:52:20.794483"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Hic Aut Distinctio Aliquam Enim Ea Quisquam Modi."], ["description", "Qui sit velit voluptatem cum dolores. Unde culpa qui aliquid. Voluptatem commodi libero reprehenderit reiciendis perferendis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.799286"], ["updated_at", "2019-02-21 23:52:20.799286"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Saepe Odit Sequi Hic Nemo Aut."], ["description", "Nisi ut eveniet repudiandae. Doloremque officia ratione magni sint in dicta. Nam ut temporibus corporis eius ut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.804894"], ["updated_at", "2019-02-21 23:52:20.804894"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Delectus Dicta Veniam Voluptate Sed Non Et Est."], ["description", "Consequatur quae eaque quidem neque enim quibusdam. Quia ut in velit. Nesciunt est animi sit ea quisquam est aspernatur. Et voluptas et quibusdam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.810337"], ["updated_at", "2019-02-21 23:52:20.810337"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Maiores Temporibus Neque Suscipit Ad Praesentium Et."], ["description", "Est quibusdam soluta explicabo neque. Tenetur hic laboriosam minus. Atque vitae illo quod et sit voluptatibus. Cum necessitatibus iste mollitia sunt. Unde reprehenderit numquam quisquam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.815941"], ["updated_at", "2019-02-21 23:52:20.815941"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Autem Illum Eum Et Nihil."], ["description", "Sed architecto et et vero est blanditiis. Harum dolor voluptas fugit nobis veniam rem. A qui tenetur deserunt. Iure corrupti dolores magni."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.820863"], ["updated_at", "2019-02-21 23:52:20.820863"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Delectus Qui Sed Sint Qui Ab Quasi Cumque."], ["description", "Voluptas dolor accusamus placeat est. Repellat et consequatur corporis. Eveniet velit harum iste. Illum voluptas et cumque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.825351"], ["updated_at", "2019-02-21 23:52:20.825351"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Vero Molestiae Consectetur Voluptates Mollitia Provident Aliquam Molestiae."], ["description", "Qui quo nihil reprehenderit sint laboriosam placeat. Vel assumenda rerum. Inventore officiis ad aut ut. Dignissimos nulla ipsum deleniti eveniet quae ipsa sunt. Harum et officia et eos."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.829796"], ["updated_at", "2019-02-21 23:52:20.829796"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Magni Et Eveniet Repellendus Perferendis Molestias Dicta Error."], ["description", "Est fugit pariatur delectus. Ab fugit molestias. Aut sit aliquid culpa eum eaque optio vel."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.833946"], ["updated_at", "2019-02-21 23:52:20.833946"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Totam Voluptatibus Beatae Modi."], ["description", "Impedit nisi nostrum laudantium omnis quis cum. Sequi facere ipsam quos soluta aliquid ut aut. Laborum ut eos illo vel."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.838204"], ["updated_at", "2019-02-21 23:52:20.838204"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Fugit Facilis Nihil Nulla Necessitatibus Dolor."], ["description", "Iusto occaecati dignissimos molestiae sed. Ea velit autem velit aspernatur architecto laboriosam quia. Exercitationem tempora voluptatem illo odio quaerat est. Qui impedit aut consequatur. Ut odio provident numquam."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.842338"], ["updated_at", "2019-02-21 23:52:20.842338"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sit Occaecati Ratione Quod Ea Mollitia."], ["description", "Suscipit tempore in. Est id dolorem perferendis atque ea nobis. Sunt quia asperiores nobis quis. Qui enim delectus totam commodi maxime voluptatibus."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.846674"], ["updated_at", "2019-02-21 23:52:20.846674"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Rerum In Eum Repellendus Officiis Consectetur Rem Itaque."], ["description", "Voluptate qui minima quo officia doloremque. Culpa ut voluptates assumenda aut molestiae. Nihil culpa atque eveniet nemo. Dolorem est voluptatem impedit deleniti cupiditate porro. Vitae eos quia facere."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.851613"], ["updated_at", "2019-02-21 23:52:20.851613"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Est Consequatur Accusamus Eveniet Hic Nemo Ratione Natus."], ["description", "Ut culpa blanditiis repudiandae ad natus aliquam. Neque labore ut est nostrum culpa. Et fugit assumenda minus. Quo provident sit rerum consequatur similique. Et inventore ipsam molestiae est."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.856919"], ["updated_at", "2019-02-21 23:52:20.856919"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Nihil Voluptatem Porro Temporibus Doloribus Dicta."], ["description", "Omnis inventore occaecati. Et velit odit maxime. Dolorem est ab nesciunt."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.861949"], ["updated_at", "2019-02-21 23:52:20.861949"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Eum Eligendi Aut Dolorem Ea Exercitationem."], ["description", "Ut vitae facilis ut. Provident magni voluptatibus sed eaque. Ducimus soluta dicta aut tempora qui accusantium. Vel sed repellendus eum totam et. Reprehenderit architecto quisquam minima rerum eum porro."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.867534"], ["updated_at", "2019-02-21 23:52:20.867534"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Velit Doloribus Consectetur Tenetur Neque Dicta Saepe Voluptatibus Perferendis."], ["description", "Perferendis magnam quia. Repellendus ducimus nam eveniet sit dolore officiis voluptatibus. Veritatis sed repellat."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.872672"], ["updated_at", "2019-02-21 23:52:20.872672"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Doloremque Ut Et Eligendi Dicta Porro."], ["description", "Modi ipsam quisquam laudantium expedita sed. Minus mollitia sit omnis et sit quis. Exercitationem eligendi rerum ut enim sit."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.877737"], ["updated_at", "2019-02-21 23:52:20.877737"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Cum Tempora Tempore Qui Consequatur Velit."], ["description", "Tempore ex dolorem nihil sed aut distinctio. Nihil dolorem mollitia ipsa. Ullam excepturi incidunt accusantium."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.882203"], ["updated_at", "2019-02-21 23:52:20.882203"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "In Ut Soluta Accusamus Aut."], ["description", "Deserunt non qui provident eaque sunt dolore expedita. Autem est recusandae minima sint voluptas. Nesciunt est accusamus doloremque soluta numquam magni est. Excepturi nostrum a. Reprehenderit et ut at corporis doloremque architecto."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.886587"], ["updated_at", "2019-02-21 23:52:20.886587"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Rem Rerum Pariatur Accusantium Tempore Commodi Architecto Assumenda."], ["description", "Nostrum et maiores cumque est. Perspiciatis libero aspernatur et blanditiis. Totam voluptatem nihil nisi eum possimus aut et. Exercitationem maiores nihil repellat."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.891444"], ["updated_at", "2019-02-21 23:52:20.891444"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Qui Autem Vero Cupiditate Occaecati."], ["description", "Consequatur architecto aliquam similique magni in qui mollitia. Voluptatibus non aut inventore et. Laboriosam ea impedit culpa et."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.895791"], ["updated_at", "2019-02-21 23:52:20.895791"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Minus Repudiandae Voluptatem Corrupti Consectetur Consequatur."], ["description", "Velit perspiciatis quaerat necessitatibus similique illum deserunt minus. Autem fuga suscipit eum odit corrupti cumque in. Fugiat labore quam qui alias sed numquam aut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.899922"], ["updated_at", "2019-02-21 23:52:20.899922"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Iste Culpa Eum Possimus."], ["description", "Aliquid laudantium qui. Maiores odit corporis qui reiciendis debitis ut in. Sapiente eum molestiae voluptas excepturi qui ducimus in. Natus quidem facilis quam rerum et consequatur non."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.903751"], ["updated_at", "2019-02-21 23:52:20.903751"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Harum Nisi Eum Rem Aperiam Molestiae Rerum Doloribus Sed."], ["description", "Aut iusto doloribus ad. Quos quidem voluptas dolorum cum quasi nihil neque. Laborum eaque rerum libero tenetur commodi. Qui doloribus eum. Provident consequatur delectus dolorem dolor."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.908057"], ["updated_at", "2019-02-21 23:52:20.908057"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Quia Eum Ipsum Doloribus Inventore."], ["description", "Quaerat quia adipisci ipsum est quod. Itaque amet perferendis at eos qui. Reiciendis dolores sed blanditiis. Eligendi nulla accusamus cum dignissimos nemo blanditiis."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.912754"], ["updated_at", "2019-02-21 23:52:20.912754"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Fugit Id Quia In Provident."], ["description", "Ullam laborum fugit nesciunt sint officiis odit rerum. Repudiandae ea non mollitia laboriosam. Hic fugit sed et est eius."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.917172"], ["updated_at", "2019-02-21 23:52:20.917172"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Non Esse Ipsam Corporis Ut Sed Quas."], ["description", "Omnis minima odit facere. Non laudantium dolor. Saepe non dolor necessitatibus sapiente dolores molestiae."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.921894"], ["updated_at", "2019-02-21 23:52:20.921894"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Suscipit Vero Veniam Aut Delectus Inventore."], ["description", "Aut aliquam sunt et similique suscipit repellat. Doloribus similique placeat veniam. Iure voluptatibus a ut nostrum et. Tenetur quod sapiente rem blanditiis harum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.926581"], ["updated_at", "2019-02-21 23:52:20.926581"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Quasi Excepturi Sed Doloremque."], ["description", "Ea sed esse porro. Excepturi sed illum tempore ad fugiat. Et voluptas velit veniam voluptates maiores. Est animi alias harum minus suscipit exercitationem praesentium. Et adipisci qui aut quia perferendis veniam pariatur."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.931875"], ["updated_at", "2019-02-21 23:52:20.931875"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Qui Quia At Id Voluptatem Eum Sit Hic."], ["description", "Ut at architecto ipsum. Ipsam et qui dolores iste odio omnis. Repellendus mollitia quae. Qui recusandae excepturi et sed. Impedit omnis consequatur accusantium eius quo in eaque."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.937289"], ["updated_at", "2019-02-21 23:52:20.937289"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Sequi In Mollitia Aut Nesciunt Fugit."], ["description", "Debitis deleniti dolorem libero. Corporis quasi voluptatem dolorem non hic voluptatibus. Quod incidunt minima dolorem."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.941601"], ["updated_at", "2019-02-21 23:52:20.941601"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Molestiae Dolorum Cum Ad Perferendis Ipsa."], ["description", "Esse repellendus magni fuga. Id in quae esse. Sint voluptas in blanditiis ut distinctio."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.946138"], ["updated_at", "2019-02-21 23:52:20.946138"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Iusto Expedita Inventore Earum Itaque Ut."], ["description", "Omnis autem natus fugiat. Voluptate quia minima in officia ab natus aut. Qui nostrum ut id reiciendis molestiae iste qui. Doloribus aspernatur fuga corporis ullam quas modi. Dolorem consequatur aut voluptates."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.950860"], ["updated_at", "2019-02-21 23:52:20.950860"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Adipisci Omnis A Odio."], ["description", "Quam iusto natus reiciendis. Perspiciatis cumque expedita. Laborum sed magnam est et. Quaerat corporis nostrum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.955652"], ["updated_at", "2019-02-21 23:52:20.955652"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Modi Impedit Soluta Quia."], ["description", "Fugit rerum alias sunt consequatur hic quae placeat. Soluta eveniet debitis aut autem labore error. Laboriosam saepe molestiae id inventore iste. Et possimus odio voluptates neque doloremque tempora nam. Repellendus qui dolorem aspernatur."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.960594"], ["updated_at", "2019-02-21 23:52:20.960594"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Suscipit Totam Doloribus Esse Et Mollitia Alias Sequi."], ["description", "Distinctio aperiam nemo quia quia nostrum. Vel quia omnis cum est. Eos impedit expedita doloribus ut laborum."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.965386"], ["updated_at", "2019-02-21 23:52:20.965386"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Voluptatem Aut Cupiditate Ratione Pariatur."], ["description", "Et et dicta quam. Omnis ad reprehenderit qui et. Ab optio praesentium suscipit voluptatem sint sit sit."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.970491"], ["updated_at", "2019-02-21 23:52:20.970491"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Quia Libero Dolorum Rerum."], ["description", "Excepturi perspiciatis architecto nostrum. Sunt et ducimus. Accusantium atque dignissimos quae eius. Eius dolor aspernatur ut accusamus deleniti assumenda. Et sint minima soluta corporis enim."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.975145"], ["updated_at", "2019-02-21 23:52:20.975145"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "In At Eos Natus Debitis Harum Error Sunt Itaque."], ["description", "Quia magnam aut. Quia magni ducimus fuga cumque sit temporibus. Odit mollitia eveniet earum aut sed."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.979547"], ["updated_at", "2019-02-21 23:52:20.979547"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Sint Aut A Mollitia Non Aut Accusantium."], ["description", "Numquam ex et possimus ut quia adipisci. Qui est eveniet. Et itaque sed aut."], ["author_id", 8], ["created_at", "2019-02-21 23:52:20.983969"], ["updated_at", "2019-02-21 23:52:20.983969"]]
+  [1m[35m (1.6ms)[0m  commit transaction
